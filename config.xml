@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+        xmlns:gap	= "http://phonegap.com/ns/1.0"
+        id			= "com.packagename.webview"
+		versionCode	= "5"
+        version		= "1.4">
+
+    <name>Webview</name>
+
+    <description>
+        Webview Template
+    </description>
+
+    <author href="http://robinbonnes.nl" email="info@robinbonnes.nl">
+        BuildTool
+    </author>
+
+	<gap:plugin name="org.apache.cordova.console" />
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="org.apache.cordova.network-information" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
+	<gap:plugin name="org.apache.cordova.splashscreen" />
+	<gap:plugin name="org.apache.cordova.vibration" />
+	
+	<preference name="phonegap-version" value="3.3.0"/>
+	<preference name="orientation" value="default"/>
+	<preference name="target-device" value="universal"/>
+	<preference name="Fullscreen" value="true"/>
+	<preference name="webviewbounce" value="false"/>
+	<preference name="prerendered-icon" value="true"/>
+	<preference name="stay-in-webview" value="true"/>
+	<preference name="ios-statusbarstyle" value="black-opaque"/>
+	<preference name="detect-data-types" value="true"/>
+	<preference name="exit-on-suspend" value="false"/>
+	<preference name="show-splash-screen-spinner" value="false"/>
+	<preference name="SplashScreenDelay" value="1000000"/>
+	<preference name="disable-cursor" value="false"/>
+	<preference name="android-minSdkVersion" value="7"/>
+	<preference name="android-installLocation" value="auto"/>
+	<preference name="AutoHideSplashScreen" value="false" />
+	
+	<access origin="*" />
+	<access uri="*" subdomains="true" browserOnly="false" />
+	
+	<option name="webview_url" required="true" type="textfield" value="http://google.com"/>
+</widget>
